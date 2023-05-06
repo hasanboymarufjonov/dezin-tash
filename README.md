@@ -1,2 +1,0 @@
-# dezin-tash
-Project
