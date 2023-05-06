@@ -15,7 +15,6 @@ import Consultation from "./components/Consultation";
 import HowWeWork from "./components/HowWeWork";
 import Price from "./components/Price";
 import MethodsProcess from "./components/MethodsProcess";
-import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 
 function App() {
   return (

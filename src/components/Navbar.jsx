@@ -67,7 +67,7 @@ export default function Nav() {
             variant="small"
             className="mr-4 cursor-pointer py-1.5 font-normal"
           >
-            <img src="src/assets/logo black.png" alt="" srcset="" />
+            <img src="src/assets/logo black.png" alt="" />
             {/* <span className="text-2xl font-bold">DezinTash</span> */}
           </Typography>
           <div className="hidden lg:block">{navList}</div>
