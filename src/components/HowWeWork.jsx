@@ -84,7 +84,7 @@ const HowWeWork = () => {
             </a>
           </li>
         </ul>
-        <p className="text-lg text-white  pt-36 w-[330px] lg:w-[1280px]">
+        <p className="text-lg text-white  pt-36 w-[330px] lg:w-[1280px] pb-8">
           {backgroundText}
         </p>
       </div>
