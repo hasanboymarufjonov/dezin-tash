@@ -1,4 +1,9 @@
 import React from "react";
+import mimarDevelopment from "../assets/clients/Mimar_Development.png";
+import mirabadAvenue from "../assets/clients/Mirabad_Avenue.png";
+import muradBuildings from "../assets/clients/Murad_Buildings.png";
+import ung from "../assets/clients/UNG.png";
+import uztelecom from "../assets/clients/Uztelecom.png";
 
 const Clients = () => {
   return (
@@ -27,22 +32,22 @@ const Clients = () => {
 
             <a href="#" className="flex justify-center items-center">
               <img
-                src="src/assets/clients/Mimar_Development.png"
-                alt=""
+                src={mimarDevelopment}
+                alt="Mimar Development logo"
                 className="hover:bg-white"
               />
             </a>
             <a href="#" className="flex justify-center items-center">
-              <img src="src/assets/clients/Murad_Buildings.png" alt="" />
+              <img src={muradBuildings} alt="Murad Buildings logo" />
             </a>
             <a href="#" className="flex justify-center items-center">
-              <img src="src/assets/clients/Mirabad_Avenue.png" alt="" />
+              <img src={mirabadAvenue} alt="Mirabad Avenue logo" />
             </a>
             <a href="#" className="flex justify-center items-center">
-              <img src="src/assets/clients/Uztelecom.png" alt="" />
+              <img src={uztelecom} alt="Uztelecom logo" />
             </a>
             <a href="#" className="flex justify-center items-center">
-              <img src="src/assets/clients/UNG.png" alt="" />
+              <img src={ung} alt="UzbekNeftGaz logo" />
             </a>
           </div>
         </div>

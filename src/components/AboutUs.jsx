@@ -1,4 +1,5 @@
 import React from "react";
+import employees from "../assets/Employees.png";
 
 const AboutUs = () => {
   return (
@@ -8,8 +9,8 @@ const AboutUs = () => {
           <div className="md:shrink-0">
             <img
               className="h-full w-full object-cover md:h-full md:w-full"
-              src="src/assets/Employees.png"
-              alt="Modern building architecture"
+              src={employees}
+              alt="Employees"
             />
           </div>
           <div className="p-6 lg:p-32 grid content-center gap-3">

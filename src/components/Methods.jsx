@@ -5,6 +5,17 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
+import minusIcon from "../assets/icons/minus.png";
+
+import antImg from "../assets/insects/ant.png";
+import beeImg from "../assets/insects/bee.png";
+import cockroachImg from "../assets/insects/cockroach.png";
+import fleaImg from "../assets/insects/flea.png";
+import flyImg from "../assets/insects/fly.png";
+import miteImg from "../assets/insects/mite.png";
+import redbugImg from "../assets/insects/redbug.png";
+import scorpionImg from "../assets/insects/scorpion.png";
+
 const Methods = () => {
   const methodsData = [
     {
@@ -152,130 +163,98 @@ const Methods = () => {
         <Slider {...settings3} className="lg:hidden">
           <div className="border-black border-t-2 border-x-2 h-40 py-4 px-2 relative">
             <div className="opacity-0 hover:opacity-100 transition-all duration-500 absolute inset-0 flex items-center justify-center">
-              <img
-                src="src/assets/insects/cockroach.png"
-                alt=""
-                className="w-full h-full"
-              />
+              <img src={cockroachImg} alt="" className="w-full h-full" />
             </div>
             <div className="">
               <h3>Уничтожить</h3>
               <p className="text-3xl font-bold">{currentMethod.insects[0]}</p>
             </div>
             <div className="float-right mt-8 ">
-              <img src="src/assets/minus.png" alt="" className="w-10" />
+              <img src={minusIcon} alt="" className="w-10" />
             </div>
           </div>
           <div className="border-black border-t-2 border-x-2 h-40 py-4 px-2 relative">
             <div className="opacity-0 hover:opacity-100 transition-all duration-500 absolute inset-0 flex items-center justify-center">
-              <img
-                src="src/assets/insects/scorpion.png"
-                alt=""
-                className="w-full h-full"
-              />
+              <img src={scorpionImg} alt="" className="w-full h-full" />
             </div>
             <div className="">
               <h3>Уничтожить</h3>
               <p className="text-3xl font-bold">{currentMethod.insects[1]}</p>
             </div>
             <div className="float-right mt-8 ">
-              <img src="src/assets/minus.png" alt="" className="w-10" />
+              <img src={minusIcon} alt="" className="w-10" />
             </div>
           </div>
           <div className="border-black border-t-2 border-x-2 h-40 py-4 px-2 relative">
             <div className="opacity-0 hover:opacity-100 transition-all duration-500 absolute inset-0 flex items-center justify-center">
-              <img
-                src="src/assets/insects/ant.png"
-                alt=""
-                className="w-full h-full"
-              />
+              <img src={antImg} alt="" className="w-full h-full" />
             </div>
             <div className="">
               <h3>Уничтожить</h3>
               <p className="text-3xl font-bold">{currentMethod.insects[2]}</p>
             </div>
             <div className="float-right mt-8 ">
-              <img src="src/assets/minus.png" alt="" className="w-10" />
+              <img src={minusIcon} alt="" className="w-10" />
             </div>
           </div>
           <div className="border-black border-t-2 border-x-2 h-40 py-4 px-2 relative">
             <div className="opacity-0 hover:opacity-100 transition-all duration-500 absolute inset-0 flex items-center justify-center">
-              <img
-                src="src/assets/insects/flea.png"
-                alt=""
-                className="w-full h-full"
-              />
+              <img src={fleaImg} alt="" className="w-full h-full" />
             </div>
             <div className="">
               <h3>Уничтожить</h3>
               <p className="text-3xl font-bold">{currentMethod.insects[3]}</p>
             </div>
             <div className="float-right mt-8 ">
-              <img src="src/assets/minus.png" alt="" className="w-10" />
+              <img src={minusIcon} alt="" className="w-10" />
             </div>
           </div>
           <div className="border-black border-t-2 border-x-2 h-40 py-4 px-2 relative">
             <div className="opacity-0 hover:opacity-100 transition-all duration-500 absolute inset-0 flex items-center justify-center">
-              <img
-                src="src/assets/insects/mite.png"
-                alt=""
-                className="w-full h-full"
-              />
+              <img src={miteImg} alt="" className="w-full h-full" />
             </div>
             <div className="">
               <h3>Уничтожить</h3>
               <p className="text-3xl font-bold">{currentMethod.insects[4]}</p>
             </div>
             <div className="float-right mt-8 ">
-              <img src="src/assets/minus.png" alt="" className="w-10" />
+              <img src={minusIcon} alt="" className="w-10" />
             </div>
           </div>
           <div className="border-black border-t-2 border-x-2 h-40 py-4 px-2 relative">
             <div className="opacity-0 hover:opacity-100 transition-all duration-500 absolute inset-0 flex items-center justify-center">
-              <img
-                src="src/assets/insects/redbug.png"
-                alt=""
-                className="w-full h-full"
-              />
+              <img src={redbugImg} alt="" className="w-full h-full" />
             </div>
             <div className="">
               <h3>Уничтожить</h3>
               <p className="text-3xl font-bold">{currentMethod.insects[5]}</p>
             </div>
             <div className="float-right mt-8 ">
-              <img src="src/assets/minus.png" alt="" className="w-10" />
+              <img src={minusIcon} alt="" className="w-10" />
             </div>
           </div>
           <div className="border-black border-t-2 border-x-2 h-40 py-4 px-2 relative">
             <div className="opacity-0 hover:opacity-100 transition-all duration-500 absolute inset-0 flex items-center justify-center">
-              <img
-                src="src/assets/insects/bee.png"
-                alt=""
-                className="w-full h-full"
-              />
+              <img src={beeImg} alt="" className="w-full h-full" />
             </div>
             <div className="">
               <h3>Уничтожить</h3>
               <p className="text-3xl font-bold">{currentMethod.insects[6]}</p>
             </div>
             <div className="float-right mt-8 ">
-              <img src="src/assets/minus.png" alt="" className="w-10" />
+              <img src={minusIcon} alt="" className="w-10" />
             </div>
           </div>
           <div className="border-black border-t-2 border-x-2 h-40 py-4 px-2 relative">
             <div className="opacity-0 hover:opacity-100 transition-all duration-500 absolute inset-0 flex items-center justify-center">
-              <img
-                src="src/assets/insects/fly.png"
-                alt=""
-                className="w-full h-full"
-              />
+              <img src={flyImg} alt="" className="w-full h-full" />
             </div>
             <div className="">
               <h3>Уничтожить</h3>
               <p className="text-3xl font-bold">{currentMethod.insects[7]}</p>
             </div>
             <div className="float-right mt-8 ">
-              <img src="src/assets/minus.png" alt="" className="w-10" />
+              <img src={minusIcon} alt="" className="w-10" />
             </div>
           </div>
         </Slider>
@@ -288,7 +267,7 @@ const Methods = () => {
               <p className="text-3xl font-bold">Тараканов</p>
             </div>
             <div className="float-right mt-8 ">
-              <img src="src/assets/minus.png" alt="" className="w-10" />
+              <img src={minusIcon} alt="" className="w-10" />
             </div>
           </div> */}
           <div
@@ -301,132 +280,100 @@ const Methods = () => {
                 hovered ? "opacity-100" : "opacity-0"
               } transition-all duration-500 absolute inset-0 flex items-center justify-center`}
             >
-              <img
-                src="src/assets/insects/cockroach.png"
-                alt=""
-                className="w-full h-full"
-              />
+              <img src={cockroachImg} alt="" className="w-full h-full" />
             </div>
             <div>
               <h3>Уничтожить</h3>
               <p className="text-3xl font-bold">{currentMethod.insects[0]}</p>
               <div className="float-right mt-8 ">
-                <img src="src/assets/minus.png" alt="" className="w-10" />
+                <img src={minusIcon} alt="" className="w-10" />
               </div>
             </div>
           </div>
           <div className="border-black border-t-2 border-x-2 h-40 py-4 px-2 relative">
             <div className="opacity-0 hover:opacity-100 transition-all duration-500 absolute inset-0 flex items-center justify-center">
-              <img
-                src="src/assets/insects/scorpion.png"
-                alt=""
-                className="w-full h-full"
-              />
+              <img src={scorpionImg} alt="" className="w-full h-full" />
             </div>
             <div className="">
               <h3>Уничтожить</h3>
               <p className="text-3xl font-bold">{currentMethod.insects[1]}</p>
             </div>
             <div className="float-right mt-8 ">
-              <img src="src/assets/minus.png" alt="" className="w-10" />
+              <img src={minusIcon} alt="" className="w-10" />
             </div>
           </div>
           <div className="border-black border-t-2 border-x-2 h-40 py-4 px-2 relative">
             <div className="opacity-0 hover:opacity-100 transition-all duration-500 absolute inset-0 flex items-center justify-center">
-              <img
-                src="src/assets/insects/ant.png"
-                alt=""
-                className="w-full h-full"
-              />
+              <img src={antImg} alt="" className="w-full h-full" />
             </div>
             <div className="">
               <h3>Уничтожить</h3>
               <p className="text-3xl font-bold">{currentMethod.insects[2]}</p>
             </div>
             <div className="float-right mt-8 ">
-              <img src="src/assets/minus.png" alt="" className="w-10" />
+              <img src={minusIcon} alt="" className="w-10" />
             </div>
           </div>
           <div className="border-black border-t-2 border-x-2 h-40 py-4 px-2 relative">
             <div className="opacity-0 hover:opacity-100 transition-all duration-500 absolute inset-0 flex items-center justify-center">
-              <img
-                src="src/assets/insects/flea.png"
-                alt=""
-                className="w-full h-full"
-              />
+              <img src={fleaImg} alt="" className="w-full h-full" />
             </div>
             <div className="">
               <h3>Уничтожить</h3>
               <p className="text-3xl font-bold">{currentMethod.insects[3]}</p>
             </div>
             <div className="float-right mt-8 ">
-              <img src="src/assets/minus.png" alt="" className="w-10" />
+              <img src={minusIcon} alt="" className="w-10" />
             </div>
           </div>
         </Slider>
         <Slider {...settings2} className="max-[800px]:hidden -ml-1 w-1/2">
           <div className="border-black border-t-2 border-x-2 h-40 py-4 px-2 relative">
             <div className="opacity-0 hover:opacity-100 transition-all duration-500 absolute inset-0 flex items-center justify-center">
-              <img
-                src="src/assets/insects/mite.png"
-                alt=""
-                className="w-full h-full"
-              />
+              <img src={miteImg} alt="" className="w-full h-full" />
             </div>
             <div className="">
               <h3>Уничтожить</h3>
               <p className="text-3xl font-bold">{currentMethod.insects[4]}</p>
             </div>
             <div className="float-right mt-8 ">
-              <img src="src/assets/minus.png" alt="" className="w-10" />
+              <img src={minusIcon} alt="" className="w-10" />
             </div>
           </div>
           <div className="border-black border-t-2 border-x-2 h-40 py-4 px-2 relative">
             <div className="opacity-0 hover:opacity-100 transition-all duration-500 absolute inset-0 flex items-center justify-center">
-              <img
-                src="src/assets/insects/redbug.png"
-                alt=""
-                className="w-full h-full"
-              />
+              <img src={redbugImg} alt="" className="w-full h-full" />
             </div>
             <div className="">
               <h3>Уничтожить</h3>
               <p className="text-3xl font-bold">{currentMethod.insects[5]}</p>
             </div>
             <div className="float-right mt-8 ">
-              <img src="src/assets/minus.png" alt="" className="w-10" />
+              <img src={minusIcon} alt="" className="w-10" />
             </div>
           </div>
           <div className="border-black border-t-2 border-x-2 h-40 py-4 px-2 relative">
             <div className="opacity-0 hover:opacity-100 transition-all duration-500 absolute inset-0 flex items-center justify-center">
-              <img
-                src="src/assets/insects/bee.png"
-                alt=""
-                className="w-full h-full"
-              />
+              <img src={beeImg} alt="" className="w-full h-full" />
             </div>
             <div className="">
               <h3>Уничтожить</h3>
               <p className="text-3xl font-bold">{currentMethod.insects[6]}</p>
             </div>
             <div className="float-right mt-8 ">
-              <img src="src/assets/minus.png" alt="" className="w-10" />
+              <img src={minusIcon} alt="" className="w-10" />
             </div>
           </div>
           <div className="border-black border-t-2 border-x-2 h-40 py-4 px-2 relative">
             <div className="opacity-0 hover:opacity-100 transition-all duration-500 absolute inset-0 flex items-center justify-center">
-              <img
-                src="src/assets/insects/fly.png"
-                alt=""
-                className="w-full h-full"
-              />{" "}
+              <img src={flyImg} alt="" className="w-full h-full" />{" "}
             </div>
             <div className="">
               <h3>Уничтожить</h3>
               <p className="text-3xl font-bold">{currentMethod.insects[7]}</p>
             </div>
             <div className="float-right mt-8 ">
-              <img src="src/assets/minus.png" alt="" className="w-10" />
+              <img src={minusIcon} alt="" className="w-10" />
             </div>
           </div>
         </Slider>

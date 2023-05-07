@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { FaSpinner } from "react-icons/fa";
+import virusLogo from "../assets/icons/virus.png";
 
 const Consultation = () => {
   return (
@@ -61,8 +62,8 @@ const Consultation = () => {
         <span className="animate-spin relative rounded-full border-[35px] lg:border-[50px] border-gray border-t-[#FDE910] h-72 w-72 p-8 lg:h-96 lg:w-96 lg:p-16"></span>
         <div className="absolute inset-0 flex justify-center items-center">
           <img
-            src="src/assets/virus.png"
-            alt=""
+            src={virusLogo}
+            alt="virus Logo"
             className="inset-0 pointer-events-none w-36 lg:w-48 animate-pulse"
           />
         </div>

@@ -1,5 +1,12 @@
 import React from "react";
 
+import Snowden from "../assets/team/edward_snowden.jpg";
+import Musk from "../assets/team/elon_musk.jpg";
+import Laurie from "../assets/team/hugh_laurie.jpg";
+import Torvalds from "../assets/team/linus_torvalds.webp";
+import Zukerberg from "../assets/team/mark_zukerberg.webp";
+import Durov from "../assets/team/pavel_durov.webp";
+
 const Team = () => {
   return (
     <div>
@@ -17,8 +24,8 @@ const Team = () => {
             <div className="text-center text-[#363532]">
               <img
                 className="mx-auto mb-4 w-[360px] grayscale hover:grayscale-0"
-                src="src/assets/team/elon_musk.jpg"
-                alt="Аброр Тапилов"
+                src={Musk}
+                alt="Аброр Тапилов Avatar"
               />
               <h3 className="mb-1 text-2xl font-bold tracking-tight text-[#363532] ">
                 <a href="#">Аброр Тапилов </a>
@@ -28,8 +35,8 @@ const Team = () => {
             <div className="text-center text-[#363532]">
               <img
                 className="mx-auto mb-4 w-[360px] grayscale hover:grayscale-0"
-                src="src/assets/team/pavel_durov.webp"
-                alt="Helene Avatar"
+                src={Durov}
+                alt="Зафар Каршибаев Avatar"
               />
               <h3 className="mb-1 text-2xl font-bold tracking-tight text-[#363532]">
                 <a href="#">Зафар Каршибаев</a>
@@ -39,8 +46,8 @@ const Team = () => {
             <div className="text-center text-[#363532]">
               <img
                 className="mx-auto mb-4 w-[360px] grayscale hover:grayscale-0"
-                src="src/assets/team/mark_zukerberg.webp"
-                alt="Jese Avatar"
+                src={Zukerberg}
+                alt="Хамраев Сардор Avatar"
               />
               <h3 className="mb-1 text-2xl font-bold tracking-tight text-[#363532]">
                 <a href="#">Хамраев Сардор</a>
@@ -50,8 +57,8 @@ const Team = () => {
             <div className="text-center text-[#363532]">
               <img
                 className="mx-auto mb-4 w-[360px] grayscale hover:grayscale-0"
-                src="src/assets/team/edward_snowden.jpg"
-                alt="Joseph Avatar"
+                src={Snowden}
+                alt="Шохакобир Ходиев Avatar"
               />
               <h3 className="mb-1 text-2xl font-bold tracking-tight text-[#363532]">
                 <a href="#">Шохакобир Ходиев </a>
@@ -61,8 +68,8 @@ const Team = () => {
             <div className="text-center text-[#363532]">
               <img
                 className="mx-auto mb-4 w-[360px] grayscale hover:grayscale-0"
-                src="src/assets/team/linus_torvalds.webp"
-                alt="Sofia Avatar"
+                src={Torvalds}
+                alt="Саид Каримов Avatar"
               />
               <h3 className="mb-1 text-2xl font-bold tracking-tight text-[#363532]">
                 <a href="#">Саид Каримов</a>
@@ -72,8 +79,8 @@ const Team = () => {
             <div className="text-center text-[#363532]">
               <img
                 className="mx-auto mb-4 w-[360px] grayscale hover:grayscale-0"
-                src="src/assets/team/hugh_laurie.jpg"
-                alt="Leslie Avatar"
+                src={Laurie}
+                alt="Юсуф Ахадов Avatar"
               />
               <h3 className="mb-1 text-2xl font-bold tracking-tight text-[#363532]">
                 <a href="#">Юсуф Ахадов</a>

@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+import MurodNazarov from "../assets/testimonial/Murod Nazarov.jpg";
+import XasanMamasoidov from "../assets/testimonial/Xasan Mamasoidov.jpg";
 
 const testimonials = [
   {
@@ -6,14 +8,14 @@ const testimonials = [
       "Фирма Dezintash - это професссионалы с большим опытом. Я могу доверять дезинфекционные работы только им. Настоящие патриоты своего дела. ",
     name: "Мурад Назаров",
     title: "Основатель компании “Murad Buildings”",
-    image: "src/assets/Murod Nazarov.jpg",
+    image: MurodNazarov,
   },
   {
     quote:
       "Фирма Dezintash - это професссионалы с большим опытом. Я могу доверять дезинфекционные работы только им. Настоящие патриоты своего дела. 2",
     name: "Ҳасан Мамасаидов",
     title: "Основатель компании “Devos”",
-    image: "src/assets/Xasan Mamasoidov.jpg",
+    image: XasanMamasoidov,
   },
   // add more testimonial objects here
 ];

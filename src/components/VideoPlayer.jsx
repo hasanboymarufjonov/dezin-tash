@@ -1,5 +1,6 @@
 import { useState, useRef } from "react";
 import { MdPlayCircle, MdPauseCircle } from "react-icons/md";
+import video from "../assets/video.mp4";
 
 function VideoPlayer() {
   const videoRef = useRef(null);
@@ -18,7 +19,7 @@ function VideoPlayer() {
     <div className="relative px-4 sm:px-6 lg:px-8 pt-10 pb-10">
       <video
         ref={videoRef}
-        src="src/assets/video.mp4"
+        src={video}
         // src="https://www.w3schools.com/html/mov_bbb.mp4"
         className="w-full object-cover max-w-[80rem] mx-auto border-2 border-[#363532]"
       />

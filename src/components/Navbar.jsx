@@ -7,7 +7,7 @@ import {
   IconButton,
 } from "@material-tailwind/react";
 
-import logo from "../assets/logo.png";
+import logo from "../assets/icons/logo.png";
 
 export default function Nav() {
   const [openNav, setOpenNav] = useState(false);
