@@ -97,7 +97,7 @@ const Price = () => {
           {categories.map((category) => (
             <div
               key={category.id}
-              className={`px-1 cursor-pointer lg:text-3xl text-[#363532] font-bold ${
+              className={`px-1 cursor-pointer text-sm lg:text-3xl text-[#363532] font-bold ${
                 selectedCategory.id === category.id
                   ? "opacity-80"
                   : "opacity-100"

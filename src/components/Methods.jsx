@@ -167,7 +167,9 @@ const Methods = () => {
             </div>
             <div className="">
               <h3>Уничтожить</h3>
-              <p className="text-3xl font-bold">{currentMethod.insects[0]}</p>
+              <p className="text-2xl lg:text-3xl font-bold">
+                {currentMethod.insects[0]}
+              </p>
             </div>
             <div className="float-right mt-8 ">
               <img src={minusIcon} alt="" className="w-10" />
@@ -179,7 +181,9 @@ const Methods = () => {
             </div>
             <div className="">
               <h3>Уничтожить</h3>
-              <p className="text-3xl font-bold">{currentMethod.insects[1]}</p>
+              <p className="text-2xl lg:text-3xl font-bold">
+                {currentMethod.insects[1]}
+              </p>
             </div>
             <div className="float-right mt-8 ">
               <img src={minusIcon} alt="" className="w-10" />
@@ -191,7 +195,9 @@ const Methods = () => {
             </div>
             <div className="">
               <h3>Уничтожить</h3>
-              <p className="text-3xl font-bold">{currentMethod.insects[2]}</p>
+              <p className="text-2xl lg:text-3xl font-bold">
+                {currentMethod.insects[2]}
+              </p>
             </div>
             <div className="float-right mt-8 ">
               <img src={minusIcon} alt="" className="w-10" />
@@ -203,7 +209,9 @@ const Methods = () => {
             </div>
             <div className="">
               <h3>Уничтожить</h3>
-              <p className="text-3xl font-bold">{currentMethod.insects[3]}</p>
+              <p className="text-2xl lg:text-3xl font-bold">
+                {currentMethod.insects[3]}
+              </p>
             </div>
             <div className="float-right mt-8 ">
               <img src={minusIcon} alt="" className="w-10" />
@@ -215,7 +223,9 @@ const Methods = () => {
             </div>
             <div className="">
               <h3>Уничтожить</h3>
-              <p className="text-3xl font-bold">{currentMethod.insects[4]}</p>
+              <p className="text-2xl lg:text-3xl font-bold">
+                {currentMethod.insects[4]}
+              </p>
             </div>
             <div className="float-right mt-8 ">
               <img src={minusIcon} alt="" className="w-10" />
@@ -227,7 +237,9 @@ const Methods = () => {
             </div>
             <div className="">
               <h3>Уничтожить</h3>
-              <p className="text-3xl font-bold">{currentMethod.insects[5]}</p>
+              <p className="text-2xl lg:text-3xl font-bold">
+                {currentMethod.insects[5]}
+              </p>
             </div>
             <div className="float-right mt-8 ">
               <img src={minusIcon} alt="" className="w-10" />
@@ -239,7 +251,9 @@ const Methods = () => {
             </div>
             <div className="">
               <h3>Уничтожить</h3>
-              <p className="text-3xl font-bold">{currentMethod.insects[6]}</p>
+              <p className="text-2xl lg:text-3xl font-bold">
+                {currentMethod.insects[6]}
+              </p>
             </div>
             <div className="float-right mt-8 ">
               <img src={minusIcon} alt="" className="w-10" />
@@ -251,7 +265,9 @@ const Methods = () => {
             </div>
             <div className="">
               <h3>Уничтожить</h3>
-              <p className="text-3xl font-bold">{currentMethod.insects[7]}</p>
+              <p className="text-2xl lg:text-3xl font-bold">
+                {currentMethod.insects[7]}
+              </p>
             </div>
             <div className="float-right mt-8 ">
               <img src={minusIcon} alt="" className="w-10" />
@@ -284,7 +300,9 @@ const Methods = () => {
             </div>
             <div>
               <h3>Уничтожить</h3>
-              <p className="text-3xl font-bold">{currentMethod.insects[0]}</p>
+              <p className="text-2xl lg:text-3xl font-bold">
+                {currentMethod.insects[0]}
+              </p>
               <div className="float-right mt-8 ">
                 <img src={minusIcon} alt="" className="w-10" />
               </div>
@@ -296,7 +314,9 @@ const Methods = () => {
             </div>
             <div className="">
               <h3>Уничтожить</h3>
-              <p className="text-3xl font-bold">{currentMethod.insects[1]}</p>
+              <p className="text-2xl lg:text-3xl font-bold">
+                {currentMethod.insects[1]}
+              </p>
             </div>
             <div className="float-right mt-8 ">
               <img src={minusIcon} alt="" className="w-10" />
@@ -308,7 +328,9 @@ const Methods = () => {
             </div>
             <div className="">
               <h3>Уничтожить</h3>
-              <p className="text-3xl font-bold">{currentMethod.insects[2]}</p>
+              <p className="text-2xl lg:text-3xl font-bold">
+                {currentMethod.insects[2]}
+              </p>
             </div>
             <div className="float-right mt-8 ">
               <img src={minusIcon} alt="" className="w-10" />
@@ -320,7 +342,9 @@ const Methods = () => {
             </div>
             <div className="">
               <h3>Уничтожить</h3>
-              <p className="text-3xl font-bold">{currentMethod.insects[3]}</p>
+              <p className="text-2xl lg:text-3xl font-bold">
+                {currentMethod.insects[3]}
+              </p>
             </div>
             <div className="float-right mt-8 ">
               <img src={minusIcon} alt="" className="w-10" />
@@ -334,7 +358,9 @@ const Methods = () => {
             </div>
             <div className="">
               <h3>Уничтожить</h3>
-              <p className="text-3xl font-bold">{currentMethod.insects[4]}</p>
+              <p className="text-2xl lg:text-3xl font-bold">
+                {currentMethod.insects[4]}
+              </p>
             </div>
             <div className="float-right mt-8 ">
               <img src={minusIcon} alt="" className="w-10" />
@@ -346,7 +372,9 @@ const Methods = () => {
             </div>
             <div className="">
               <h3>Уничтожить</h3>
-              <p className="text-3xl font-bold">{currentMethod.insects[5]}</p>
+              <p className="text-2xl lg:text-3xl font-bold">
+                {currentMethod.insects[5]}
+              </p>
             </div>
             <div className="float-right mt-8 ">
               <img src={minusIcon} alt="" className="w-10" />
@@ -358,7 +386,9 @@ const Methods = () => {
             </div>
             <div className="">
               <h3>Уничтожить</h3>
-              <p className="text-3xl font-bold">{currentMethod.insects[6]}</p>
+              <p className="text-2xl lg:text-3xl font-bold">
+                {currentMethod.insects[6]}
+              </p>
             </div>
             <div className="float-right mt-8 ">
               <img src={minusIcon} alt="" className="w-10" />
@@ -370,7 +400,9 @@ const Methods = () => {
             </div>
             <div className="">
               <h3>Уничтожить</h3>
-              <p className="text-3xl font-bold">{currentMethod.insects[7]}</p>
+              <p className="text-2xl lg:text-3xl font-bold">
+                {currentMethod.insects[7]}
+              </p>
             </div>
             <div className="float-right mt-8 ">
               <img src={minusIcon} alt="" className="w-10" />
