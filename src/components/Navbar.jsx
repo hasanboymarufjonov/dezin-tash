@@ -7,6 +7,8 @@ import {
   IconButton,
 } from "@material-tailwind/react";
 
+import logo from "../assets/logo.png";
+
 export default function Nav() {
   const [openNav, setOpenNav] = useState(false);
 
@@ -67,7 +69,7 @@ export default function Nav() {
             variant="small"
             className="mr-4 cursor-pointer py-1.5 font-normal"
           >
-            <img src="src/assets/logo black.png" alt="" />
+            <img src={logo} alt="DezinTash" />
             {/* <span className="text-2xl font-bold">DezinTash</span> */}
           </Typography>
           <div className="hidden lg:block">{navList}</div>
