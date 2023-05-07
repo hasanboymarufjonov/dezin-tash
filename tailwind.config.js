@@ -9,6 +9,7 @@ export default {
     //   bluedef: "#F0F4F9",
     //   white: "#FFFFFF",
     // },
+
     extend: {
       animation: {
         blob: "blob 7s infinite",

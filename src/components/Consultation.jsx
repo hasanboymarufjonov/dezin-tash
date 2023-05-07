@@ -4,7 +4,7 @@ import virusLogo from "../assets/icons/virus.png";
 
 const Consultation = () => {
   return (
-    <div className="py-24 max-w-5xl mx-auto">
+    <div className="py-24 max-w-5xl lg:mx-auto">
       <div className="lg:float-left pt-10 pb-20 w-[300px] lg:w-fit mx-auto lg:mx-0">
         <div>
           <h2 className="text-3xl lg:text-5xl">Все еще думаете? </h2>

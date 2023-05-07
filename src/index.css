@@ -1,13 +1,24 @@
-@import url("https://fonts.googleapis.com/css2?family=Martel+Sans:wght@300;400&family=Poppins:wght@400;500;600;700&family=Ruda:wght@500&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=Martel+Sans:wght@300;400&family=Poppins:wght@400;500;600;700&family=Ruda:wght@500&display=swap"); */
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+@font-face {
+  font-family: "mainFont";
+  src: url("./assets/font/PPGoshaSans-Regular.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 :root {
-  font-family: "Martel Sans", sans-serif;
-  font-family: "Poppins", sans-serif;
-  font-family: "Ruda", sans-serif;
+  font-family: "MainFont", sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 @layer utilities {
