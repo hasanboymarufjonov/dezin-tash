@@ -151,10 +151,10 @@ const FAQ = () => {
     <div className="mx-auto  bg-[#363532] min-h-sceen py-44 px-4">
       <div className="mx-auto mb-8  lg:mb-16  max-w-5xl">
         <h2 className="mb-4 text-lg font-extrabold text-[#FDE910] uppercase">
-          Вопросы{" "}
+          Вопросы
         </h2>
         <p className=" text-white text-5xl lg:text-5xl ">
-          Часто задаваемые вопросы{" "}
+          Часто задаваемые вопросы
         </p>
       </div>
       {faqs.map((faq) => (
