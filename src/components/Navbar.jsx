@@ -67,7 +67,7 @@ export default function Nav() {
             as="a"
             href="#"
             variant="small"
-            className="mr-4 cursor-pointer py-1.5 font-normal"
+            className="mr-4 cursor-pointer py-1.5 font-normal mt-6"
           >
             <img src={logo} alt="DezinTash" />
             {/* <span className="text-2xl font-bold">DezinTash</span> */}
@@ -85,7 +85,7 @@ export default function Nav() {
           </Button>
           <IconButton
             variant="text"
-            className="ml-auto h-6 w-6 text-inherit hover:bg-transparent focus:bg-transparent active:bg-transparent lg:hidden -mt-6"
+            className="ml-auto h-6 w-6 text-inherit hover:bg-transparent focus:bg-transparent active:bg-transparent lg:hidden"
             ripple={false}
             onClick={() => setOpenNav(!openNav)}
           >
