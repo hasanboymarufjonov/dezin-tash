@@ -108,7 +108,7 @@ const Footer = () => {
             </ul>
           </div>
           <span className="block text-sm text-white text-center py-8">
-            All rights reserved 2022{" "}
+            All rights reserved 2023
           </span>
         </div>
       </footer>
