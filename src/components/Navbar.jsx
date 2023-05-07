@@ -85,7 +85,7 @@ export default function Nav() {
           </Button>
           <IconButton
             variant="text"
-            className="ml-auto h-6 w-6 text-inherit hover:bg-transparent focus:bg-transparent active:bg-transparent lg:hidden"
+            className="ml-auto h-6 w-6 text-inherit hover:bg-transparent focus:bg-transparent active:bg-transparent lg:hidden -mt-6"
             ripple={false}
             onClick={() => setOpenNav(!openNav)}
           >
