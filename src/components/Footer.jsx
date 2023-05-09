@@ -1,6 +1,8 @@
 import React from "react";
+import { useTranslation } from "react-i18next";
 
 const Footer = () => {
+  const { t } = useTranslation();
   return (
     <div>
       <footer className="bg-[#363532] " id="contact">
@@ -13,7 +15,7 @@ const Footer = () => {
                 </div>{" "}
                 <div className="self-center text-sm  whitespace-nowrap dark:text-white underline pt-2">
                   <a href="https://dezintash.uz/wp-content/themes/dezintash/img/gramoty/1.jpg">
-                    Посмотреть сертификаты
+                    {t("Посмотреть сертификаты")}
                   </a>
                 </div>
               </div>
@@ -33,7 +35,7 @@ const Footer = () => {
                     href="https://www.google.com/maps/search/%D0%B3.+%D0%A2%D0%B0%D1%88%D0%BA%D0%B5%D0%BD%D1%82+%D0%9C%D0%B8%D1%80%D0%B7%D0%BE+%D0%A3%D0%BB%D1%83%D0%B3%D0%B1%D0%B5%D0%BA,+%D0%A2%D0%A2%D0%97-1+21%2F3/@41.3533196,69.3605466,15z/data=!3m1!4b1"
                     className="mr-4 hover:underline md:mr-6"
                   >
-                    г. Ташкент, Мирзо Улугбек ТТЗ-1 21/3{" "}
+                    {t("г. Ташкент, Мирзо Улугбек ТТЗ-1 21/3")}
                   </a>
                 </li>
               </div>
@@ -51,7 +53,7 @@ const Footer = () => {
                     href="https://www.google.com/maps/search/%D0%B3.+%D0%A2%D0%B0%D1%88%D0%BA%D0%B5%D0%BD%D1%82+%D0%9C%D0%B8%D1%80%D0%B7%D0%BE+%D0%A3%D0%BB%D1%83%D0%B3%D0%B1%D0%B5%D0%BA,+%D0%A2%D0%A2%D0%97-1+21%2F3/@41.3533196,69.3605466,15z/data=!3m1!4b1"
                     className="hover:underline"
                   >
-                    Посмотреть на карте{" "}
+                    {t("Посмотреть на карте")}
                   </a>
                 </li>
               </div>
@@ -62,17 +64,17 @@ const Footer = () => {
             <ul className="flex flex-wrap items-center mb-6 text-sm font-medium text-white">
               <li>
                 <a href="#methods" className="mr-4 hover:underline md:mr-6 ">
-                  Методы услуг{" "}
+                  {t("Методы услуг")}
                 </a>
               </li>
               <li>
                 <a href="#process" className="mr-4 hover:underline md:mr-6">
-                  Средства обработки{" "}
+                  {t("Средства обработки")}
                 </a>
               </li>
               <li>
                 <a href="#clients" className="mr-4 hover:underline md:mr-6 ">
-                  Клиенты
+                  {t("Клиенты")}
                 </a>
               </li>
               <li>
@@ -80,12 +82,12 @@ const Footer = () => {
                   href="#testimonials"
                   className="mr-4 hover:underline md:mr-6 "
                 >
-                  Отзывы
+                  {t("Отзывы")}
                 </a>
               </li>
               <li>
                 <a href="#about" className="hover:underline">
-                  О нас
+                  {t("О нас")}
                 </a>
               </li>
             </ul>
@@ -108,7 +110,7 @@ const Footer = () => {
             </ul>
           </div>
           <span className="block text-sm text-white text-center py-8">
-            All rights reserved 2023
+            {t("All rights reserved")} 2023
           </span>
         </div>
       </footer>

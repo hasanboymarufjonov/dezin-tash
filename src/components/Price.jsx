@@ -1,80 +1,157 @@
 import { useState } from "react";
+import { useTranslation } from "react-i18next";
 
-const categories = [
-  {
-    id: 1,
-    name: "Дезинсекция",
-    cards: [
-      {
-        id: 1,
-        name: "Дезинсекция скорпионов и клоп",
-        title: "дезинсекция",
-        file: "https://dezintash.uz/wp-content/themes/dezintash/img/gramoty/1.jpg",
-      },
-      {
-        id: 2,
-        name: "Дезинсекция муравьев и блох",
-        file: "https://dezintash.uz/wp-content/themes/dezintash/img/gramoty/1.jpg",
-      },
-      {
-        id: 3,
-        name: "Дезинсекция тараканов и мух",
-        file: "https://dezintash.uz/wp-content/themes/dezintash/img/gramoty/1.jpg",
-      },
-      {
-        id: 4,
-        name: "Дезинсекция клещей и ос",
-        file: "https://dezintash.uz/wp-content/themes/dezintash/img/gramoty/1.jpg",
-      },
-    ],
-  },
-  {
-    id: 2,
-    name: "Деротизация",
-    cards: [
-      {
-        id: 1,
-        name: "Деротизация мышь и крот",
-        title: "деротизация",
-        file: "https://dezintash.uz/wp-content/themes/dezintash/img/gramoty/1.jpg",
-      },
-      {
-        id: 2,
-        name: "Деротизация крыс землероек",
-        file: "https://dezintash.uz/wp-content/themes/dezintash/img/gramoty/1.jpg",
-      },
-    ],
-  },
-  {
-    id: 3,
-    name: "Дезинфекция",
-    cards: [
-      {
-        id: 1,
-        name: "Дезинфекция ресторанов",
-        title: "дезинфекция",
-        file: "https://dezintash.uz/wp-content/themes/dezintash/img/gramoty/1.jpg",
-      },
-      {
-        id: 2,
-        name: "Дезинфекция квартир",
-        file: "https://dezintash.uz/wp-content/themes/dezintash/img/gramoty/1.jpg",
-      },
-      {
-        id: 3,
-        name: "Дезинфекция помещений",
-        file: "https://dezintash.uz/wp-content/themes/dezintash/img/gramoty/1.jpg",
-      },
-      {
-        id: 4,
-        name: "Дезинфекция предприятий",
-        file: "https://dezintash.uz/wp-content/themes/dezintash/img/gramoty/1.jpg",
-      },
-    ],
-  },
-];
+// const categories = [
+//   {
+//     id: 1,
+//     name: t("Дезинсекция"),
+//     cards: [
+//       {
+//         id: 1,
+//         name: "Дезинсекция скорпионов и клоп",
+//         title: "дезинсекция",
+//         file: "https://dezintash.uz/wp-content/themes/dezintash/img/gramoty/1.jpg",
+//       },
+//       {
+//         id: 2,
+//         name: "Дезинсекция муравьев и блох",
+//         file: "https://dezintash.uz/wp-content/themes/dezintash/img/gramoty/1.jpg",
+//       },
+//       {
+//         id: 3,
+//         name: "Дезинсекция тараканов и мух",
+//         file: "https://dezintash.uz/wp-content/themes/dezintash/img/gramoty/1.jpg",
+//       },
+//       {
+//         id: 4,
+//         name: "Дезинсекция клещей и ос",
+//         file: "https://dezintash.uz/wp-content/themes/dezintash/img/gramoty/1.jpg",
+//       },
+//     ],
+//   },
+//   {
+//     id: 2,
+//     name: "Деротизация",
+//     cards: [
+//       {
+//         id: 1,
+//         name: "Деротизация мышь и крот",
+//         title: "деротизация",
+//         file: "https://dezintash.uz/wp-content/themes/dezintash/img/gramoty/1.jpg",
+//       },
+//       {
+//         id: 2,
+//         name: "Деротизация крыс землероек",
+//         file: "https://dezintash.uz/wp-content/themes/dezintash/img/gramoty/1.jpg",
+//       },
+//     ],
+//   },
+//   {
+//     id: 3,
+//     name: "Дезинфекция",
+//     cards: [
+//       {
+//         id: 1,
+//         name: "Дезинфекция ресторанов",
+//         title: "дезинфекция",
+//         file: "https://dezintash.uz/wp-content/themes/dezintash/img/gramoty/1.jpg",
+//       },
+//       {
+//         id: 2,
+//         name: "Дезинфекция квартир",
+//         file: "https://dezintash.uz/wp-content/themes/dezintash/img/gramoty/1.jpg",
+//       },
+//       {
+//         id: 3,
+//         name: "Дезинфекция помещений",
+//         file: "https://dezintash.uz/wp-content/themes/dezintash/img/gramoty/1.jpg",
+//       },
+//       {
+//         id: 4,
+//         name: "Дезинфекция предприятий",
+//         file: "https://dezintash.uz/wp-content/themes/dezintash/img/gramoty/1.jpg",
+//       },
+//     ],
+//   },
+// ];
 
 const Price = () => {
+  const { t } = useTranslation();
+
+  const categories = [
+    {
+      id: 1,
+      name: t("Дезинсекция"),
+      cards: [
+        {
+          id: 1,
+          name: t("Дезинсекция скорпионов и клоп"),
+          title: t("дезинсекция"),
+          file: "https://dezintash.uz/wp-content/themes/dezintash/img/gramoty/1.jpg",
+        },
+        {
+          id: 2,
+          name: t("Дезинсекция муравьев и блох"),
+          file: "https://dezintash.uz/wp-content/themes/dezintash/img/gramoty/1.jpg",
+        },
+        {
+          id: 3,
+          name: t("Дезинсекция тараканов и мух"),
+          file: "https://dezintash.uz/wp-content/themes/dezintash/img/gramoty/1.jpg",
+        },
+        {
+          id: 4,
+          name: t("Дезинсекция клещей и ос"),
+          file: "https://dezintash.uz/wp-content/themes/dezintash/img/gramoty/1.jpg",
+        },
+      ],
+    },
+    {
+      id: 2,
+      name: t("Деротизация"),
+      cards: [
+        {
+          id: 1,
+          name: t("Деротизация мышь и крот"),
+          title: t("деротизация"),
+          file: "https://dezintash.uz/wp-content/themes/dezintash/img/gramoty/1.jpg",
+        },
+        {
+          id: 2,
+          name: t("Деротизация крыс землероек"),
+          file: "https://dezintash.uz/wp-content/themes/dezintash/img/gramoty/1.jpg",
+        },
+      ],
+    },
+    {
+      id: 3,
+      name: t("Дезинфекция"),
+      cards: [
+        {
+          id: 1,
+          name: t("Дезинфекция ресторанов"),
+          title: t("дезинфекция"),
+          file: "https://dezintash.uz/wp-content/themes/dezintash/img/gramoty/1.jpg",
+        },
+        {
+          id: 2,
+          name: t("Дезинфекция квартир"),
+          file: "https://dezintash.uz/wp-content/themes/dezintash/img/gramoty/1.jpg",
+        },
+        {
+          id: 3,
+          name: t("Дезинфекция помещений"),
+          file: "https://dezintash.uz/wp-content/themes/dezintash/img/gramoty/1.jpg",
+        },
+        {
+          id: 4,
+          name: t("Дезинфекция предприятий"),
+          file: "https://dezintash.uz/wp-content/themes/dezintash/img/gramoty/1.jpg",
+        },
+      ],
+    },
+  ];
+
   const [selectedCategory, setSelectedCategory] = useState(categories[0]);
 
   const handleClick = (category) => {
@@ -85,12 +162,12 @@ const Price = () => {
     <div className="grid  lg:flex lg:justify-center overflow-hidden">
       <div className="w-full lg:w-2/4 bg-[#F7F7F7] py-8 px-2 lg:py-40 lg:px-20">
         <div className="">
-          <h2 className="text-lg uppercase">Цены</h2>
-          <p className="text-5xl pt-2">Цены на процедуры</p>
+          <h2 className="text-lg uppercase">{t("Цены")}</h2>
+          <p className="text-5xl pt-2">{t("Цены на процедуры")}</p>
           <p className="text-lg pt-4">
-            25% дохода от процедур пожертвуется на блогие дела. Вы работая с
-            нами не только избавитесь от вредителей но и делаете пожертвование
-            на нуждающиеся руки!
+            {t(
+              "25% дохода от процедур пожертвуется на блогие дела. Вы работая с нами не только избавитесь от вредителей но и делаете пожертвование на нуждающиеся руки!"
+            )}
           </p>
         </div>
         <div className="pt-10 flex lg:grid lg:gap-4">
@@ -113,7 +190,7 @@ const Price = () => {
       <div className="w-full lg:w-2/4 py-8 px-8 lg:py-40 lg:px-20">
         <div>
           <h2 className="text-2xl ">
-            Цены на{" "}
+            {t("Цены на")}
             {selectedCategory.cards.map((card) => (
               <span>{card.title}</span>
             ))}
@@ -146,7 +223,7 @@ const Price = () => {
                     href={card.file}
                     className="text-xs group-hover:text-[#FDE910] pl-2"
                   >
-                    Скачать PDF
+                    {t("Скачать PDF")}
                   </a>
                 </div>
               </div>

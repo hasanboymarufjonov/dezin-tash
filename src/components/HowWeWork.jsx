@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { useTranslation } from "react-i18next";
 
 import background1 from "../assets/background/background-1.png";
 import background2 from "../assets/background/background-2.png";
@@ -9,10 +10,13 @@ import two from "../assets/numbers/2.png";
 import three from "../assets/numbers/3.png";
 
 const HowWeWork = () => {
+  const { t } = useTranslation();
   const [backgroundImage, setBackgroundImage] = useState(`url(${background1})`);
 
   const [backgroundText, setBackgroundText] = useState(
-    "Делаем так что бы было безопасно вам и вашим младенцом! Не оставляем следов после обработки, не портим мебель, ламинат и обои!"
+    t(
+      "Делаем так что бы было безопасно вам и вашим младенцом! Не оставляем следов после обработки, не портим мебель, ламинат и обои!"
+    )
   );
 
   const handleHover = (image, text) => {
@@ -29,7 +33,7 @@ const HowWeWork = () => {
     >
       <div className="lg:text-5xl space-x-8  max-w-7xl mx-auto ">
         <p className="text-lg text-[#FDE910] uppercase ml-10">
-          Как мы работаем?
+          {t("Как мы работаем?")}
         </p>
         <ul className="">
           <li className="py-4 mt-10">
@@ -39,13 +43,15 @@ const HowWeWork = () => {
               onMouseEnter={() =>
                 handleHover(
                   background1,
-                  "Делаем так что бы было безопасно вам и вашим младенцом! Не оставляем следов после обработки, не портим мебель, ламинат и обои!"
+                  t(
+                    "Делаем так что бы было безопасно вам и вашим младенцом! Не оставляем следов после обработки, не портим мебель, ламинат и обои!"
+                  )
                 )
               }
             >
               <div className="flex items-center">
                 <img src={one} className="w-10 lg:w-12 mr-2" />
-                <p>Безопасно и чисто</p>
+                <p>{t("Безопасно и чисто")}</p>
               </div>
             </a>
           </li>
@@ -56,13 +62,15 @@ const HowWeWork = () => {
               onMouseEnter={() =>
                 handleHover(
                   background2,
-                  "Ты используем современное высокотехнологичное оборудование и даем на все наши услуги гарантию на 1 год!"
+                  t(
+                    "Ты используем современное высокотехнологичное оборудование и даем на все наши услуги гарантию на 1 год!"
+                  )
                 )
               }
             >
               <div className="flex items-center">
                 <img src={two} className="float-left w-10 lg:w-12 mr-2" />
-                <p>Качественно и гарантно</p>{" "}
+                <p>{t("Качественно и гарантно")}</p>
               </div>
             </a>
           </li>
@@ -73,13 +81,15 @@ const HowWeWork = () => {
               onMouseEnter={() =>
                 handleHover(
                   background3,
-                  "Наши мастера обучены секретной концентрации смесей, которая безопасно и очень еффективна! Работу выполняем строго в сроки, а может даже и раньше"
+                  t(
+                    "Наши мастера обучены секретной концентрации смесей, которая безопасно и очень еффективна! Работу выполняем строго в сроки, а может даже и раньше"
+                  )
                 )
               }
             >
               <div className="flex items-center">
                 <img src={three} className="float-left w-10 lg:w-12 mr-2" />
-                <p>Профессионально и быстро</p>
+                <p>{t("Профессионально и быстро")}</p>
               </div>
             </a>
           </li>

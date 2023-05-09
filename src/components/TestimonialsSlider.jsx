@@ -1,26 +1,49 @@
 import React, { useState } from "react";
+import { useTranslation } from "react-i18next";
+
 import MurodNazarov from "../assets/testimonial/Murod Nazarov.jpg";
 import XasanMamasoidov from "../assets/testimonial/Xasan Mamasoidov.jpg";
 
-const testimonials = [
-  {
-    quote:
-      "Фирма Dezintash - это професссионалы с большим опытом. Я могу доверять дезинфекционные работы только им. Настоящие патриоты своего дела. ",
-    name: "Мурад Назаров",
-    title: "Основатель компании “Murad Buildings”",
-    image: MurodNazarov,
-  },
-  {
-    quote:
-      "Фирма Dezintash - это професссионалы с большим опытом. Я могу доверять дезинфекционные работы только им. Настоящие патриоты своего дела. 2",
-    name: "Ҳасан Мамасаидов",
-    title: "Основатель компании “Devos”",
-    image: XasanMamasoidov,
-  },
-  // add more testimonial objects here
-];
+// const testimonials = [
+//   {
+//     quote:
+//       "Фирма Dezintash - это професссионалы с большим опытом. Я могу доверять дезинфекционные работы только им. Настоящие патриоты своего дела. ",
+//     name: "Мурад Назаров",
+//     title: "Основатель компании “Murad Buildings”",
+//     image: MurodNazarov,
+//   },
+//   {
+//     quote:
+//       "Фирма Dezintash - это професссионалы с большим опытом. Я могу доверять дезинфекционные работы только им. Настоящие патриоты своего дела. 2",
+//     name: "Ҳасан Мамасаидов",
+//     title: "Основатель компании “Devos”",
+//     image: XasanMamasoidov,
+//   },
+//   // add more testimonial objects here
+// ];
 
 const TestimonialsSlider = () => {
+  const { t } = useTranslation();
+
+  const testimonials = [
+    {
+      quote: t(
+        "Фирма Dezintash - это професссионалы с большим опытом. Я могу доверять дезинфекционные работы только им. Настоящие патриоты своего дела."
+      ),
+      name: t("Мурад Назаров"),
+      title: t("Основатель компании “Murad Buildings”"),
+      image: MurodNazarov,
+    },
+    {
+      quote: t(
+        "Фирма Dezintash - это професссионалы с большим опытом. Я могу доверять дезинфекционные работы только им. Настоящие патриоты своего дела."
+      ),
+      name: t("Ҳасан Мамасаидов"),
+      title: t("Основатель компании “Devos”"),
+      image: XasanMamasoidov,
+    },
+  ];
+
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const previousTestimonial = () => {
@@ -41,10 +64,10 @@ const TestimonialsSlider = () => {
     <div className="bg-[#FDE910]" id="testimonials">
       <div className="max-w-[85rem] mx-auto px-4 sm:px-6 lg:px-8 pt-24 pb-10">
         <div>
-          <p className="text-lg uppercase">Отзывы </p>
+          <p className="text-lg uppercase">{t("Отзывы")} </p>
           <div className="">
             <h2 className="lg:text-5xl text-3xl float-left ">
-              Пусть клиенты говорят
+              {t("Пусть клиенты говорят")}
             </h2>
             <a
               className="inline-flex justify-right items-center gap-x-3.5  text-sm font-medium max-[1200px]:hidden float-right"
@@ -56,7 +79,7 @@ const TestimonialsSlider = () => {
                   className="border rounded-full border-black bg-white w-6 p-1"
                 />
               </span>
-              Отзывы клиентов
+              {t("Отзывы клиентов")}
             </a>
           </div>
         </div>{" "}

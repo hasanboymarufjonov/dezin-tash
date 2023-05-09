@@ -6,10 +6,12 @@ import {
   Button,
   IconButton,
 } from "@material-tailwind/react";
+import { useTranslation } from "react-i18next";
 
 import logo from "../assets/icons/logo.png";
 
 export default function Nav() {
+  const { t } = useTranslation();
   const [openNav, setOpenNav] = useState(false);
 
   useEffect(() => {
@@ -23,7 +25,7 @@ export default function Nav() {
     <ul className="mb-4 mt-2 flex flex-col gap-2 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-6">
       <Typography as="li" variant="small" className="p-1 font-normal">
         <a href="#about" className="flex items-center">
-          Добро пожаловать
+          {t("Добро пожаловать")}
         </a>
       </Typography>
       <Typography
@@ -33,7 +35,7 @@ export default function Nav() {
         className="p-1 font-normal"
       >
         <a href="#methods" className="flex items-center">
-          Методы услуги
+          {t("Методы услуги")}
         </a>
       </Typography>
       <Typography
@@ -43,7 +45,7 @@ export default function Nav() {
         className="p-1 font-normal"
       >
         <a href="#process" className="flex items-center">
-          Средства обработки
+          {t("Средства обработки")}
         </a>
       </Typography>
       <Typography
@@ -53,7 +55,7 @@ export default function Nav() {
         className="p-1 font-normal"
       >
         <a href="#contact" className="flex items-center">
-          Kонтакты
+          {t("Kонтакты")}
         </a>
       </Typography>
     </ul>

@@ -1,7 +1,9 @@
 import React from "react";
 import employees from "../assets/Employees.png";
+import { useTranslation } from "react-i18next";
 
 const AboutUs = () => {
+  const { t } = useTranslation();
   return (
     <div id="about">
       <div className="mx-auto overflow-hidden bg-[#363532]">
@@ -15,22 +17,23 @@ const AboutUs = () => {
           </div>
           <div className="p-6 lg:p-32 grid content-center gap-3">
             <div className="uppercase tracking-wide text-[#FDE910] font-semibold text-lg">
-              О нас
+              {t("О нас")}
             </div>
             <a
               href="#"
               className="block mt-1 lg:text-5xl text-3xl leading-tight font-medium text-white hover:underline"
             >
-              Мы с вами уже 6 лет
+              {t("Мы с вами уже 6 лет")}
             </a>
             <p className="mt-2 text-white text-lg ">
-              Фирма Dezintash был основан в 2017 году, и с этого момента
-              старается для народа. В нашем команде собрались профессионалы и
-              делают своё дело качественно. Наши препораты самые лучшие в
-              Республике. <br /> <br /> Команда Dezintash делает всё
-              качественно, безопасно и быстро. Вы можете вызвыть наших
-              специалистов и избавиться от насекомых, грызунов или бактерии
-              навсегда.
+              {t(
+                "Фирма Dezintash был основан в 2017 году, и с этого момента старается для народа. В нашем команде собрались профессионалы и делают своё дело качественно. Наши препораты самые лучшие в Республике."
+              )}
+              <br />
+              <br />
+              {t(
+                "Команда Dezintash делает всё качественно, безопасно и быстро. Вы можете вызвыть наших специалистов и избавиться от насекомых, грызунов или бактерии навсегда."
+              )}
             </p>
             <div className="flex gap-4 mt-10">
               <a
@@ -71,7 +74,7 @@ const AboutUs = () => {
                   </svg>
                 </span>
                 <span className="relative w-full text-left transition-colors duration-200 ease-in-out group-hover:text-white">
-                  Вызвать специалиста
+                  {t("Вызвать специалиста")}
                 </span>
               </a>
             </div>

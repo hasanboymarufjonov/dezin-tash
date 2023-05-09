@@ -1,6 +1,7 @@
 import React from "react";
 import { useState } from "react";
 import Slider from "react-slick";
+import { useTranslation } from "react-i18next";
 
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -17,50 +18,55 @@ import redbugImg from "../assets/insects/redbug.png";
 import scorpionImg from "../assets/insects/scorpion.png";
 
 const Methods = () => {
+  const { t } = useTranslation();
+
   const methodsData = [
     {
-      title: "1. Дезинсекция",
-      about:
-        "Дезинсе́кция  — один из видов обеззараживания, представляющий собой уничтожение  насекомых и клещей, способных переносить трансмиссивные инфекции, вредить запасам продовольствия и растениям, с помощью специальных химических средств, физических средств  или с помощью биологических средств. ",
+      title: t("1. Дезинсекция"),
+      about: t(
+        "Дезинсе́кция  — один из видов обеззараживания, представляющий собой уничтожение  насекомых и клещей, способных переносить трансмиссивные инфекции, вредить запасам продовольствия и растениям, с помощью специальных химических средств, физических средств  или с помощью биологических средств."
+      ),
       insects: [
-        "Тараканов",
-        "Скорпионов",
-        "Муравьев",
-        "Блох",
-        "Клещей",
-        "Клоп",
-        "Ос",
-        "Мух",
+        t("Тараканов"),
+        t("Скорпионов"),
+        t("Муравьев"),
+        t("Блох"),
+        t("Клещей"),
+        t("Клоп"),
+        t("Ос"),
+        t("Мух"),
       ],
     },
     {
-      title: "2. Дератизация  ",
-      about:
-        "Дератизация — комплексные меры по уничтожению грызунов (крыс, мышей, полёвок и др.). Существует несколько различных способов: пищевые ядхимикаты (в виде приманок), капканы, газообразные яды, электронные и клеевые ловушки. В отличие от них, рекламируемые ультразвуковые отпугиватели не имеют никакого эффекта.       ",
+      title: t("2. Дератизация"),
+      about: t(
+        "Дератизация — комплексные меры по уничтожению грызунов (крыс, мышей, полёвок и др.). Существует несколько различных способов: пищевые ядхимикаты (в виде приманок), капканы, газообразные яды, электронные и клеевые ловушки. В отличие от них, рекламируемые ультразвуковые отпугиватели не имеют никакого эффекта."
+      ),
       insects: [
-        "Крот",
-        "Крыс",
-        "Мышь",
-        "Землероек",
-        "Крот",
-        "Крыс",
-        "Мышь",
-        "Землероек",
+        t("Крот"),
+        t("Крыс"),
+        t("Мышь"),
+        t("Землероек"),
+        t("Крот"),
+        t("Крыс"),
+        t("Мышь"),
+        t("Землероек"),
       ],
     },
     {
-      title: "3. Дезинфекция  ",
-      about:
-        "Дезинфе́кция — это комплекс мероприятий, направленный на уничтожение возбудителей инфекционных заболеваний и разрушение токсинов на объектах внешней среды для предотвращения попадания их на кожу, слизистые и раневую поверхность. Является одним из видов обеззараживания.        ",
+      title: t("3. Дезинфекция"),
+      about: t(
+        "Дезинфе́кция — это комплекс мероприятий, направленный на уничтожение возбудителей инфекционных заболеваний и разрушение токсинов на объектах внешней среды для предотвращения попадания их на кожу, слизистые и раневую поверхность. Является одним из видов обеззараживания."
+      ),
       insects: [
-        "Помещений",
-        "Ресторанов",
-        "Предприятий",
-        "Квартир",
-        "Помещений",
-        "Ресторанов",
-        "Предприятий",
-        "Квартир",
+        t("Помещений"),
+        t("Ресторанов"),
+        t("Предприятий"),
+        t("Квартир"),
+        t("Помещений"),
+        t("Ресторанов"),
+        t("Предприятий"),
+        t("Квартир"),
       ],
     },
   ];
@@ -131,7 +137,7 @@ const Methods = () => {
   return (
     <div className="max-w-5l lg:flex overflow-hidden" id="methods">
       <div className="w-full lg:w-1/2 px-4 py-8 lg:py-20 lg:px-20">
-        <h2 className="text-lg uppercase">Методы услуг</h2>
+        <h2 className="text-lg uppercase">{t("Методы услуг")}</h2>
         <p className="text-3xl lg:text-5xl pt-3">{currentMethod.title} →</p>
         <p className="text-lg pt-4">{currentMethod.about}</p>
         <div className="pt-10">
@@ -166,7 +172,7 @@ const Methods = () => {
               <img src={cockroachImg} alt="" className="w-full h-full" />
             </div>
             <div className="">
-              <h3>Уничтожить</h3>
+              <h3>{t("Уничтожить")}</h3>
               <p className="text-2xl lg:text-3xl font-bold">
                 {currentMethod.insects[0]}
               </p>
@@ -180,7 +186,7 @@ const Methods = () => {
               <img src={scorpionImg} alt="" className="w-full h-full" />
             </div>
             <div className="">
-              <h3>Уничтожить</h3>
+              <h3>{t("Уничтожить")}</h3>
               <p className="text-2xl lg:text-3xl font-bold">
                 {currentMethod.insects[1]}
               </p>
@@ -194,7 +200,7 @@ const Methods = () => {
               <img src={antImg} alt="" className="w-full h-full" />
             </div>
             <div className="">
-              <h3>Уничтожить</h3>
+              <h3>{t("Уничтожить")}</h3>
               <p className="text-2xl lg:text-3xl font-bold">
                 {currentMethod.insects[2]}
               </p>
@@ -208,7 +214,7 @@ const Methods = () => {
               <img src={fleaImg} alt="" className="w-full h-full" />
             </div>
             <div className="">
-              <h3>Уничтожить</h3>
+              <h3>{t("Уничтожить")}</h3>
               <p className="text-2xl lg:text-3xl font-bold">
                 {currentMethod.insects[3]}
               </p>
@@ -222,7 +228,7 @@ const Methods = () => {
               <img src={miteImg} alt="" className="w-full h-full" />
             </div>
             <div className="">
-              <h3>Уничтожить</h3>
+              <h3>{t("Уничтожить")}</h3>
               <p className="text-2xl lg:text-3xl font-bold">
                 {currentMethod.insects[4]}
               </p>
@@ -236,7 +242,7 @@ const Methods = () => {
               <img src={redbugImg} alt="" className="w-full h-full" />
             </div>
             <div className="">
-              <h3>Уничтожить</h3>
+              <h3>{t("Уничтожить")}</h3>
               <p className="text-2xl lg:text-3xl font-bold">
                 {currentMethod.insects[5]}
               </p>
@@ -250,7 +256,7 @@ const Methods = () => {
               <img src={beeImg} alt="" className="w-full h-full" />
             </div>
             <div className="">
-              <h3>Уничтожить</h3>
+              <h3>{t("Уничтожить")}</h3>
               <p className="text-2xl lg:text-3xl font-bold">
                 {currentMethod.insects[6]}
               </p>
@@ -264,7 +270,7 @@ const Methods = () => {
               <img src={flyImg} alt="" className="w-full h-full" />
             </div>
             <div className="">
-              <h3>Уничтожить</h3>
+              <h3>{t("Уничтожить")}</h3>
               <p className="text-2xl lg:text-3xl font-bold">
                 {currentMethod.insects[7]}
               </p>
@@ -279,7 +285,7 @@ const Methods = () => {
         <Slider {...settings} className="max-[800px]:hidden w-1/2">
           {/* <div className="border-black border-t-2 border-x-2 h-40 py-4 px-2 ">
             <div className="">
-              <h3>Уничтожить</h3>
+              <h3>{t("Уничтожить")}</h3>
               <p className="text-3xl font-bold">Тараканов</p>
             </div>
             <div className="float-right mt-8 ">
@@ -299,7 +305,7 @@ const Methods = () => {
               <img src={cockroachImg} alt="" className="w-full h-full" />
             </div>
             <div>
-              <h3>Уничтожить</h3>
+              <h3>{t("Уничтожить")}</h3>
               <p className="text-2xl lg:text-3xl font-bold">
                 {currentMethod.insects[0]}
               </p>
@@ -313,7 +319,7 @@ const Methods = () => {
               <img src={scorpionImg} alt="" className="w-full h-full" />
             </div>
             <div className="">
-              <h3>Уничтожить</h3>
+              <h3>{t("Уничтожить")}</h3>
               <p className="text-2xl lg:text-3xl font-bold">
                 {currentMethod.insects[1]}
               </p>
@@ -327,7 +333,7 @@ const Methods = () => {
               <img src={antImg} alt="" className="w-full h-full" />
             </div>
             <div className="">
-              <h3>Уничтожить</h3>
+              <h3>{t("Уничтожить")}</h3>
               <p className="text-2xl lg:text-3xl font-bold">
                 {currentMethod.insects[2]}
               </p>
@@ -341,7 +347,7 @@ const Methods = () => {
               <img src={fleaImg} alt="" className="w-full h-full" />
             </div>
             <div className="">
-              <h3>Уничтожить</h3>
+              <h3>{t("Уничтожить")}</h3>
               <p className="text-2xl lg:text-3xl font-bold">
                 {currentMethod.insects[3]}
               </p>
@@ -357,7 +363,7 @@ const Methods = () => {
               <img src={miteImg} alt="" className="w-full h-full" />
             </div>
             <div className="">
-              <h3>Уничтожить</h3>
+              <h3>{t("Уничтожить")}</h3>
               <p className="text-2xl lg:text-3xl font-bold">
                 {currentMethod.insects[4]}
               </p>
@@ -371,7 +377,7 @@ const Methods = () => {
               <img src={redbugImg} alt="" className="w-full h-full" />
             </div>
             <div className="">
-              <h3>Уничтожить</h3>
+              <h3>{t("Уничтожить")}</h3>
               <p className="text-2xl lg:text-3xl font-bold">
                 {currentMethod.insects[5]}
               </p>
@@ -385,7 +391,7 @@ const Methods = () => {
               <img src={beeImg} alt="" className="w-full h-full" />
             </div>
             <div className="">
-              <h3>Уничтожить</h3>
+              <h3>{t("Уничтожить")}</h3>
               <p className="text-2xl lg:text-3xl font-bold">
                 {currentMethod.insects[6]}
               </p>
@@ -399,7 +405,7 @@ const Methods = () => {
               <img src={flyImg} alt="" className="w-full h-full" />{" "}
             </div>
             <div className="">
-              <h3>Уничтожить</h3>
+              <h3>{t("Уничтожить")}</h3>
               <p className="text-2xl lg:text-3xl font-bold">
                 {currentMethod.insects[7]}
               </p>

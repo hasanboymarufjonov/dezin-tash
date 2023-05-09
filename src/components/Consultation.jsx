@@ -1,17 +1,18 @@
-import { useState, useEffect } from "react";
-import { FaSpinner } from "react-icons/fa";
 import virusLogo from "../assets/icons/virus.png";
 
+import { useTranslation } from "react-i18next";
+
 const Consultation = () => {
+  const { t } = useTranslation();
   return (
     <div className="py-24 max-w-5xl lg:mx-auto">
       <div className="lg:float-left pt-10 pb-20 w-[300px] lg:w-fit mx-auto lg:mx-0">
         <div>
-          <h2 className="text-3xl lg:text-5xl">Все еще думаете? </h2>
+          <h2 className="text-3xl lg:text-5xl">{t("Все еще думаете?")} </h2>
         </div>
         <div>
           <p className="text-lg lg:text-xl pt-4 lg:max-w-[620px]">
-            Тогда получите бесплатную консультацию от наших специалистов.
+            {t("Тогда получите бесплатную консультацию от наших специалистов.")}
           </p>
         </div>
         <div className="flex gap-4 mt-10">
@@ -53,7 +54,7 @@ const Consultation = () => {
               </svg>
             </span>
             <span className="relative w-full text-left transition-colors duration-200 ease-in-out group-hover:text-white">
-              Вызвать специалиста
+              {t("Вызвать специалиста")}
             </span>
           </a>
         </div>

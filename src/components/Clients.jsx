@@ -1,4 +1,5 @@
 import React from "react";
+import { useTranslation } from "react-i18next";
 import mimarDevelopment from "../assets/clients/Mimar_Development.png";
 import mirabadAvenue from "../assets/clients/Mirabad_Avenue.png";
 import muradBuildings from "../assets/clients/Murad_Buildings.png";
@@ -6,12 +7,13 @@ import ung from "../assets/clients/UNG.png";
 import uztelecom from "../assets/clients/Uztelecom.png";
 
 const Clients = () => {
+  const { t } = useTranslation();
   return (
     <div>
       <section className="bg-[#F5F5F5]" id="clients">
         <div className="py-8 lg:py-16 mx-auto max-w-screen-xl px-4">
           <h2 className="mb-8 lg:mb-16 text-3xl font-extrabold tracking-tight leading-tight  text-gray-900  md:text-4xl">
-            Нам уже доверяют более 50 компании
+            {t("Нам уже доверяют более 50 компании")}
           </h2>
           <div className="grid grid-cols-3 gap-8 text-gray-500 sm:gap-12 md:grid-cols-3 lg:grid-cols-5 dark:text-gray-400">
             {/* <a href="#" className="flex justify-center items-center">
@@ -38,16 +40,32 @@ const Clients = () => {
               />
             </a>
             <a href="#" className="flex justify-center items-center">
-              <img src={muradBuildings} alt="Murad Buildings logo" />
+              <img
+                src={muradBuildings}
+                alt="Murad Buildings logo"
+                className="hover:bg-white"
+              />
             </a>
             <a href="#" className="flex justify-center items-center">
-              <img src={mirabadAvenue} alt="Mirabad Avenue logo" />
+              <img
+                src={mirabadAvenue}
+                alt="Mirabad Avenue logo"
+                className="hover:bg-white"
+              />
             </a>
             <a href="#" className="flex justify-center items-center">
-              <img src={uztelecom} alt="Uztelecom logo" />
+              <img
+                src={uztelecom}
+                alt="Uztelecom logo"
+                className="hover:bg-white"
+              />
             </a>
             <a href="#" className="flex justify-center items-center">
-              <img src={ung} alt="UzbekNeftGaz logo" />
+              <img
+                src={ung}
+                alt="UzbekNeftGaz logo"
+                className="hover:bg-white"
+              />
             </a>
           </div>
         </div>

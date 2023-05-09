@@ -1,6 +1,10 @@
 import React from "react";
 
+import { useTranslation } from "react-i18next";
+import LanguageSwitcher from "./LanguageSwitcher";
+
 const Hero = () => {
+  const { t } = useTranslation();
   return (
     <div>
       <section className="bg-[#FDE910]">
@@ -11,25 +15,27 @@ const Hero = () => {
           <div className="absolute top-64 right-64 w-[132px] h-[132px]  rounded-full mix-blend-multiply animate-blob animation-delay-6000 bg-gradient-to-r from-[#FDE910] to-[#e6d30a]"></div>
           <div className="absolute top-64 right-[500px] w-[90px] h-[90px]  rounded-full mix-blend-multiply animate-blob animation-delay-8000 bg-gradient-to-r from-[#FDE910] to-[#e6d30a]"></div>
           <div className="absolute top-32 right-64 w-[92px] h-[92px]  rounded-full mix-blend-multiply animate-blob animation-delay-10000 bg-gradient-to-r from-[#FDE910] to-[#e6d30a]"></div>
-          <div className="max-w-[88rem] mr-3">
+          {/* <div className="max-w-[88rem] mr-3">
             <button className="rounded-full  border border-black float-right w-10 h-10 ml-2">
               Uz
             </button>
             <button className="rounded-full bg-white border-1 border border-black float-right w-10 h-10">
               Ру
             </button>
-          </div>
+          </div> */}
+          {/* <h1>{t("Welcome to My App")}</h1> */}
+          <LanguageSwitcher />
           <div className="max-w-[85rem] mx-auto px-4 sm:px-6 lg:px-8 pt-24 pb-10">
             <div className="mt-5  text-left mx-auto">
               <h1 className="block font-bold text-black text-4xl md:text-5xl lg:text-6xl">
-                Эффективное уничтожение <br />
-                вредителей.
+                {t("Эффективное уничтожение вредителей.")}
               </h1>
             </div>
 
             <div className="mt-5 text-left mx-auto">
               <p className="text-lg text-black">
-                Избавьтесь от насекомых, грызунов и вирусов <br /> уже сегодня!
+                {t("Избавьтесь от насекомых, грызунов и вирусов уже сегодня!")}
+                {/* Избавьтесь от насекомых, грызунов и вирусов <br /> уже сегодня! */}
               </p>
             </div>
 
@@ -80,7 +86,8 @@ const Hero = () => {
                   </svg>
                 </span>
                 <span className="relative w-full text-left transition-colors duration-200 ease-in-out group-hover:text-white  ">
-                  Вызвать дезинфектора
+                  {t("Вызвать дезинфектора")}
+                  {/* Вызвать дезинфектора */}
                 </span>
               </a>
 
@@ -95,7 +102,10 @@ const Hero = () => {
                   />
                 </span>
                 <a href="#clients">
-                  <p className="hover:underline">Отзывы клиентов</p>
+                  <p className="hover:underline">
+                    {t("Отзывы клиентов")}
+                    {/* Отзывы клиентов */}
+                  </p>
                 </a>
               </a>
             </div>
@@ -103,7 +113,8 @@ const Hero = () => {
             <div className="mt-10 flex justify-left items-center gap-x-1 sm:gap-x-3 max-[800px]:hidden">
               <a href="#team">
                 <span className="text-sm text-black hover:underline">
-                  Как это произойдет?
+                  {t("Как это произойдет?")}
+                  {/* Как это произойдет? */}
                 </span>
               </a>
             </div>

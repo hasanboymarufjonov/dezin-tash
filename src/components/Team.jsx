@@ -1,4 +1,5 @@
 import React from "react";
+import { useTranslation } from "react-i18next";
 
 import Snowden from "../assets/team/edward_snowden.jpg";
 import Musk from "../assets/team/elon_musk.jpg";
@@ -8,16 +9,17 @@ import Zukerberg from "../assets/team/mark_zukerberg.webp";
 import Durov from "../assets/team/pavel_durov.webp";
 
 const Team = () => {
+  const { t } = useTranslation();
   return (
     <div>
       <section className="bg-[#F5F5F5]" id="team">
         <div className="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6">
           <div className="mx-auto mb-8  lg:mb-16">
             <h2 className="mb-4 text-lg font-extrabold text-gray-900 uppercase">
-              команда{" "}
+              {t("команда")}
             </h2>
             <p className=" text-gray-500 text-3xl lg:text-5xl ">
-              Наша команда профессионалов
+              {t("Наша команда профессионалов")}
             </p>
           </div>
           <div className="grid gap-8 lg:gap-16 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
@@ -28,9 +30,9 @@ const Team = () => {
                 alt="Аброр Тапилов Avatar"
               />
               <h3 className="mb-1 text-2xl font-bold tracking-tight text-[#363532] ">
-                <a href="#">Аброр Тапилов </a>
+                <a href="#">{t("Аброр Тапилов")} </a>
               </h3>
-              <p>Основатель компании </p>
+              <p>{t("Основатель компании")} </p>
             </div>
             <div className="text-center text-[#363532]">
               <img
@@ -39,9 +41,9 @@ const Team = () => {
                 alt="Зафар Каршибаев Avatar"
               />
               <h3 className="mb-1 text-2xl font-bold tracking-tight text-[#363532]">
-                <a href="#">Зафар Каршибаев</a>
+                <a href="#">{t("Зафар Каршибаев")}</a>
               </h3>
-              <p>Главный менеджер</p>
+              <p>{t("Главный менеджер")}</p>
             </div>
             <div className="text-center text-[#363532]">
               <img
@@ -50,9 +52,9 @@ const Team = () => {
                 alt="Хамраев Сардор Avatar"
               />
               <h3 className="mb-1 text-2xl font-bold tracking-tight text-[#363532]">
-                <a href="#">Хамраев Сардор</a>
+                <a href="#">{t("Хамраев Сардор")}</a>
               </h3>
-              <p>Специалист консультант</p>
+              <p>{t("Специалист консультант")}</p>
             </div>
             <div className="text-center text-[#363532]">
               <img
@@ -61,9 +63,9 @@ const Team = () => {
                 alt="Шохакобир Ходиев Avatar"
               />
               <h3 className="mb-1 text-2xl font-bold tracking-tight text-[#363532]">
-                <a href="#">Шохакобир Ходиев </a>
+                <a href="#">{t("Шохакобир Ходиев")} </a>
               </h3>
-              <p>Менеджер</p>
+              <p>{t("Менеджер")}</p>
             </div>
             <div className="text-center text-[#363532]">
               <img
@@ -72,9 +74,9 @@ const Team = () => {
                 alt="Саид Каримов Avatar"
               />
               <h3 className="mb-1 text-2xl font-bold tracking-tight text-[#363532]">
-                <a href="#">Саид Каримов</a>
+                <a href="#">{t("Саид Каримов")}</a>
               </h3>
-              <p>дезинфектор</p>
+              <p>{t("дезинфектор")}</p>
             </div>
             <div className="text-center text-[#363532]">
               <img
@@ -83,9 +85,9 @@ const Team = () => {
                 alt="Юсуф Ахадов Avatar"
               />
               <h3 className="mb-1 text-2xl font-bold tracking-tight text-[#363532]">
-                <a href="#">Юсуф Ахадов</a>
+                <a href="#">{t("Юсуф Ахадов")}</a>
               </h3>
-              <p>Врач эпидемиолог</p>
+              <p>{t("Врач эпидемиолог")}</p>
             </div>
           </div>
         </div>

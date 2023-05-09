@@ -1,27 +1,40 @@
 import React from "react";
 import cleaning from "../assets/cleaning.jpg";
+import { useTranslation } from "react-i18next";
 
 const Mission = () => {
+  const { t } = useTranslation();
+
   return (
     <div>
       <div className="mx-auto overflow-hidden bg-[#363532]">
         <div className="md:flex">
           <div className="p-6 lg:p-32 grid content-center gap-3">
             <div className="uppercase tracking-wide text-[#FDE910] font-semibold text-lg">
-              Наша миссия{" "}
+              {t("Наша миссия")}
+              {/* Наша миссия */}
             </div>
             <a
               href="#"
               className="block mt-1 lg:text-5xl text-3xl leading-tight font-medium text-white hover:underline"
             >
-              Основная Задача Dezintash
+              {t("Основная Задача Dezintash")}
+              {/* Основная Задача Dezintash */}
             </a>
             <p className="mt-2 text-white text-lg ">
-              Основная Задача «Dezintash» — защита клиентов и их иммущества от
-              всевозможных паразитов и вредителей. <br /> <br /> Вы можете
-              вызвыть наших специалистов и избавиться от насекомых, грызунов или
-              бактерии навсегда. Также можете получить бесплатную консультацию
-              по избавлении насекомых прямо сейчас.
+              {t(
+                "Основная Задача «Dezintash» — защита клиентов и их иммущества от всевозможных паразитов и вредителей."
+              )}
+              {/* Основная Задача «Dezintash» — защита клиентов и их иммущества от
+              всевозможных паразитов и вредителей. */}
+              <br />
+              <br />
+              {t(
+                "Вы можете вызвыть наших специалистов и избавиться от насекомых, грызунов или бактерии навсегда. Также можете получить бесплатную консультацию по избавлении насекомых прямо сейчас."
+              )}
+              {/* Вы можете вызвыть наших специалистов и избавиться от насекомых,
+              грызунов или бактерии навсегда. Также можете получить бесплатную
+              консультацию по избавлении насекомых прямо сейчас. */}
             </p>
             <div className="flex gap-4 mt-10">
               <a
@@ -62,7 +75,8 @@ const Mission = () => {
                   </svg>
                 </span>
                 <span className="relative w-full text-left transition-colors duration-200 ease-in-out group-hover:text-white">
-                  Вызвать специалиста
+                  {t("Вызвать специалиста")}
+                  {/* Вызвать специалиста */}
                 </span>
               </a>
             </div>

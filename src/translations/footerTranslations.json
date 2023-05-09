@@ -1,0 +1,28 @@
+{
+  "ru": {
+    "translation": {
+      "Посмотреть сертификаты": "Посмотреть сертификаты",
+      "Посмотреть на карте": "Посмотреть на карте",
+      "г. Ташкент, Мирзо Улугбек ТТЗ-1 21/3": "г. Ташкент, Мирзо Улугбек ТТЗ-1 21/3",
+      "Методы услуг": "Методы услуг",
+      "Средства обработки": "Средства обработки",
+      "Клиенты": "Клиенты",
+      "Отзывы": "Отзывы",
+      "О нас": "О нас",
+      "All rights reserved": "All rights reserved"
+    }
+  },
+  "uz": {
+    "translation": {
+      "Посмотреть сертификаты": "Sertifikatlarni ko'rish",
+      "Посмотреть на карте": "Xaritada ko'rish",
+      "г. Ташкент, Мирзо Улугбек ТТЗ-1 21/3": "Toshkent, Mirzo Ulug‘bek TTZ-1 21/3",
+      "Методы услуг": "Xizmat ko'rsatish usullari",
+      "Средства обработки": "Qayta ishlash vositalari",
+      "Клиенты": "Mijozlar",
+      "Отзывы": "Sharhlar",
+      "О нас": "Biz haqimizda",
+      "All rights reserved": "Barcha huquqlar himoyalangan"
+    }
+  }
+}
